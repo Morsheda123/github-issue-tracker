@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<meta charset="UTF-8">
+<title>GitHub Issues Tracker</title>
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body class="bg-gray-100">
+
+<!-- Navigation bar -->
+
+    <nav class="w-full h-[80px] bg-white  flex items-center justify-between px-10">
+        <div class="flex items-center gap-2">
+            <img src="assets/github-logo.png" class="w-9">
+            <h1 class="text-[1.5rem] font-semibold text-gray-800">GitHub Issues Tracker</h1>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <div class="relative">
+                <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-gray-400 text-sm"></i>
+
+                <input id="searchInput" type="text" placeholder="Search issues..." onkeyup="searchIssues()" class="w-[240px] 
+                h-[36px] border border-gray-300 rounded-md pl-9 pr-3 text-sm"/>
+            </div>
+
+            <button class="bg-indigo-700 text-white text-sm px-4 h-[36px] rounded-md flex items-center gap-1">
+            <i class="fa-solid fa-plus text-xs"></i>
+            New Issue
+            </button>
+        </div>
+    </nav>
